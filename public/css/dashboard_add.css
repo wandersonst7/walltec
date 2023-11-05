@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --cor-nav: linear-gradient(#3578dc, #0311cf);
+    --fonte-main:'Lato', sans-serif !important;
+}
+
+*{
+  font-family: var(--fonte-main);
+}
+
+#form-search{
+    border-radius: 6px;
+}
+  
+.form-search input{
+  min-width: 300px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+}
+
+form.focus{
+  border-color: grey;
+}
+
+.form-search input:focus{
+  box-shadow: 0 0 0 0 ;
+  border: 0 none;
+  outline: 0; 
+}
+
+.form-search button{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+  
+.color-nav{
+    background: var(--cor-nav);
+}
+
+.nav-responsive{
+    display: none !important;
+}
+
+.active{
+    background-color: #E5E5E5 !important;
+    color: #636464 !important;
+    border-color: #DEE2E6 !important;
+}
+
+table tr, th, td{
+  vertical-align: middle;
+}
+
+.btn-space{
+  margin: 0px 3px;
+}
+
+@media (max-width: 1000px) {
+    .nav-responsive{
+        display: block !important;
+    }
+}
+
+@media (max-width: 600px) {
+  #logo-responsive{
+    width: 120px;
+  }
+
+  .buttons-dashboard{
+    flex-direction: column;
+  }
+
+    .btn-space{
+      margin: 8% 0;
+    }
+  }
